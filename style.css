@@ -99,3 +99,6 @@ body{background:var(--bg)}
 footer{background:#0b1220;border:0;color:#9fb0cf}
 footer .footbrand,footer a{color:#fff}
 @media (max-width:760px){.split{grid-template-columns:1fr}.tl{grid-template-columns:64px 1fr}.hero.v3 .copy{padding-bottom:40px}.hero.v3 .phone{width:260px}}
+.hero.v3 .phone{color:var(--fg);background:var(--card)}
+.hero.v3 .chip .dot{box-shadow:0 0 0 2px rgba(255,255,255,.85)}
+.hero.v3 .trip .row span:last-child{color:var(--muted)}

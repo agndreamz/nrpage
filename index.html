@@ -3,46 +3,74 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NammaRoute – Bengaluru trip search</title>
-<meta name="description" content="Plan Bengaluru trips across BMTC buses, Namma Metro and trains, with a one-tap handoff to Namma Yatri, Uber or Ola for the first and last mile.">
+<title>NammaRoute – Bengaluru trip planner</title>
+<meta name="description" content="Plan Bengaluru trips across BMTC buses, Namma Metro and trains, with a one-tap handoff to Namma Yatri, Uber or Ola.">
+<meta name="theme-color" content="#e4570f">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrap">
-<nav><a href="./">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
-<header>
-  <h1>Namma<span>Route</span></h1>
-  <p class="lead">Trip search for Bengaluru across BMTC buses, Namma Metro and trains, with a one-tap handoff to an auto for the first and last mile.</p>
-</header>
-
+<header class="top"><div class="wrap">
+<a class="logo" href="./"><i><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8 17c6 0 2-10 8-10"/></svg></i><span>NammaRoute</span></a>
+<nav><a href="./#features">Features</a><a href="./#how">How it works</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+</div></header>
 <main>
-  <section class="grid" aria-label="Features">
-    <div class="card"><h3>Buses and metro, together</h3><p>One plan combines walking, BMTC bus and Namma Metro legs, built on OpenTripPlanner and community GTFS feeds.</p></div>
-    <div class="card"><h3>Trains from a nightly timetable</h3><p>Bengaluru train options come from a timetable refreshed every night, and are added to the bus and metro legs around each station.</p></div>
-    <div class="card"><h3>Auto handoff</h3><p>Tap to open Namma Yatri, Uber or Ola, whichever is installed on your phone, for the first or last mile.</p></div>
-    <div class="card"><h3>No payments here</h3><p>NammaRoute does not sell tickets or take payments. You pay the operator or the auto platform directly.</p></div>
-  </section>
-
-  <h2>How it works</h2>
-  <ol>
-    <li>Enter where you are and where you are going.</li>
-    <li>Pick an itinerary mixing walking, bus, metro and train.</li>
-    <li>Tap the auto option to continue the first or last mile in your ride app.</li>
-  </ol>
-
-  <h2>Data</h2>
-  <div class="grid">
-    <div class="card"><h3>BMTC &amp; Namma Metro</h3><p>Community GTFS feeds from <a href="https://github.com/Vonter/bmtc-gtfs">bmtc-gtfs</a> and <a href="https://github.com/Vonter/bmrcl-gtfs">bmrcl-gtfs</a>.</p></div>
-    <div class="card"><h3>Streets</h3><p>OpenStreetMap, clipped to the transit service area.</p></div>
-  </div>
-
-  <p class="note">Fares and times are estimates from timetable data, not live vehicle positions, unless a departure is marked live.</p>
-</main>
-
-<footer>
-  <a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms</a> · <a href="mailto:supportavir@gmail.com">Support</a><br>
-  NammaRoute is an independent project and is not affiliated with BMTC, BMRCL, Indian Railways, Namma Yatri, Uber or Ola.
-</footer>
+<div class="hero"><div class="wrap">
+<div>
+<span class="pill">Bengaluru trip planner</span>
+<h1>One route. <em>Bus, metro, train and auto.</em></h1>
+<p class="lead">NammaRoute plans your whole Bengaluru journey in one go, then hands the first and last mile to the auto app already on your phone.</p>
+<div class="chips">
+<span class="chip"><span class="dot" style="background:var(--bus)"></span>BMTC bus</span>
+<span class="chip"><span class="dot" style="background:var(--metro)"></span>Namma Metro</span>
+<span class="chip"><span class="dot" style="background:var(--train)"></span>Train</span>
+<span class="chip"><span class="dot" style="background:var(--auto)"></span>Auto</span>
 </div>
+</div>
+<div class="phone" aria-hidden="true">
+<div class="map"><svg viewBox="0 0 270 150" preserveAspectRatio="none"><path d="M0 110C60 100 80 60 140 70S230 30 270 20" stroke="#fff" stroke-opacity=".6" stroke-width="10" fill="none"/><path d="M20 140L120 20M180 150L250 40" stroke="#fff" stroke-opacity=".5" stroke-width="6" fill="none"/><path d="M30 120C70 110 90 70 140 75S220 40 245 28" stroke="#9333ea" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="1 0"/><circle cx="30" cy="120" r="7" fill="#e4570f" stroke="#fff" stroke-width="3"/><circle cx="245" cy="28" r="7" fill="#1a1714" stroke="#fff" stroke-width="3"/></svg></div>
+<div class="sheet">
+<div class="search"><b>Indiranagar</b> → <b>Kempegowda Airport</b></div>
+<div class="trip best"><div class="row"><span>52 min</span><span>₹ 85</span></div><div class="legs"><span style="background:var(--auto);color:#1a1714">Auto</span><span style="background:var(--metro)">Metro</span><span style="background:var(--bus)">Bus</span></div></div>
+<div class="trip"><div class="row"><span>1 h 10 min</span><span>₹ 60</span></div><div class="legs"><span style="background:var(--bus)">Bus</span><span style="background:var(--bus)">Bus</span></div></div>
+</div></div>
+</div></div>
+
+<section id="features"><div class="wrap">
+<p class="eyebrow">Features</p>
+<h2>Everything between here and there</h2>
+<p class="sub">Built on open transit data and a real trip planner, so one search covers the whole city.</p>
+<div class="grid">
+<div class="card"><div class="ico" style="background:var(--bus)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="15" rx="3"/><path d="M4 11h16M8 21v-3M16 21v-3"/><circle cx="8" cy="14.5" r=".5"/><circle cx="16" cy="14.5" r=".5"/></svg></div><h3>Buses and metro together</h3><p>Walk, BMTC bus and Namma Metro legs combined into a single itinerary with estimated fares.</p></div>
+<div class="card"><div class="ico" style="background:var(--train)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M5 11h14M9 21l2-4M15 21l-2-4"/></svg></div><h3>Trains included</h3><p>Bengaluru train options come from a nightly timetable, joined to bus and metro legs at each station.</p></div>
+<div class="card"><div class="ico" style="background:var(--auto)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15V9l3-4h8l2 4h3a2 2 0 0 1 2 2v4"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg></div><h3>One-tap auto handoff</h3><p>Open Namma Yatri, Uber or Ola, whichever you have installed, for the first or last mile.</p></div>
+<div class="card"><div class="ico" style="background:var(--metro)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div><h3>No sign-up, no payments</h3><p>No account, no ads and no tickets sold. You pay the operator or ride app directly.</p></div>
+</div></div></section>
+
+<section id="how" class="band"><div class="wrap">
+<p class="eyebrow">How it works</p>
+<h2>From address to ride in three steps</h2>
+<p class="sub">Plan once, then jump straight into the app you already use.</p>
+<div class="steps">
+<div class="step"><h3>Search</h3><p>Enter where you are and where you are going, or use your location.</p></div>
+<div class="step"><h3>Compare</h3><p>Pick an itinerary mixing walking, bus, metro and train.</p></div>
+<div class="step"><h3>Go</h3><p>Tap the auto option to continue the first or last mile in your ride app.</p></div>
+</div>
+<p class="note">Times and fares are estimates from timetable data, not live vehicle positions, unless a departure is marked live.</p>
+</div></section>
+
+<section><div class="wrap">
+<p class="eyebrow">Data</p>
+<h2>Open data underneath</h2>
+<p class="sub">Routing runs on OpenTripPlanner.</p>
+<div class="grid">
+<div class="card"><h3>BMTC &amp; Namma Metro</h3><p>Community GTFS feeds from <a href="https://github.com/Vonter/bmtc-gtfs">bmtc-gtfs</a> and <a href="https://github.com/Vonter/bmrcl-gtfs">bmrcl-gtfs</a>.</p></div>
+<div class="card"><h3>Streets</h3><p>OpenStreetMap, clipped to the transit service area, for walking legs.</p></div>
+<div class="card"><h3>Your privacy</h3><p>Read what the app handles in the <a href="privacy.html">privacy policy</a>.</p></div>
+</div></div></section>
+</main>
+<footer><div class="wrap">
+<div>NammaRoute is an independent project, not affiliated with BMTC, BMRCL, Indian Railways, Namma Yatri, Uber or Ola.</div>
+<div><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="mailto:supportavir@gmail.com">supportavir@gmail.com</a></div>
+</div></footer>
 </body>
 </html>
